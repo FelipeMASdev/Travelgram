@@ -1,10 +1,7 @@
 footer {
-  display: flex;
-  align-items: center;
-  padding:32px;
-  max-width: 1280px;
-  margin-inline: auto;
+  padding-block:32px;
   gap: 16px;
+  font: 14px/150% var(--font-family);
 }
 
 footer span{
