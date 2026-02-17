@@ -10,7 +10,7 @@ main img{
   flex-grow: 0;
 
   flex-basis: 286px;
-  width: 100%;
+  max-width: 286px;
   height: auto;
   object-fit: cover;
 
