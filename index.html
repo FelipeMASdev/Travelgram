@@ -8,71 +8,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travelgram | Perfil de Viagens</title>
 
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="wrapper" id="nav-wrapper">
-    <nav class="container">
-      <a href="#" id="logo">
-        <img src="./assets/Logo.svg" alt="Logomarca">
+  <header class="container flex items-center">
+    <img src="./assets/Logo.svg" alt="Logomarca Travelgram">
+    <nav class="flex items-center gap-1">
+      <a class="flex items-center gap-1" href="#">
+        <img src="assets/icons/MagnifyingGlass.svg" alt="">
+        <span class="desktop-only">Explorar</span>
       </a>
-      <ul id="primary-menu">
-        <li>
-          <a href="#">
-            <img src="./assets/icons/MagnifyingGlass.svg" alt="icone de lupa">
-          </a>
-        </li>
-        <li><a href="#">Explorer</a></li>
-        <li><a href="#">Minhas viagens</a></li>
-        <li><a href="#">
-          <img src="./assets/Profile-pic.png" alt="Imagem de Isabela Torres">
-        </a></li>
-      </ul>
+      <a href="#" class="desktop-only">Minhas viagens</a>
+      <a href="#"><img src="assets/Profile-pic.png" alt=""></a>
     </nav>
-  </div>
+  </header>
 
-  <div class="wrapper" id="header-wrapper">
-    <header class="container">
-      <section id="profile">
-        <img src="./assets/Profile-pic.png" alt="Foto de Isabela Torres">
-        <div>
-          <h1>Isabela Torres</h1>
-          <p>Amante de viagens, cultura e gastronomia. 🌍✈️ <br>
-          Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸</p>
-        </div>
-      </section>
-      
-      <section id="info">
-        <div><img src="./assets/icons/MapPin.svg" alt="Icone de localização "><span>São Paulo, Brazil</span></div>
-        <div><img src="./assets/icons/AirplaneTilt.svg" alt="Icone de avião"><span>37 países</span></div>
-        <div><img src="./assets/icons/Image.svg" alt="Icone de foto"><span>240 fotos</span></div>
-      </section>
-    </header>   
-  </div>
+  <section id="hero" class="container">
+    <div>
+      <img src="assets/Profile-pic.png" alt="">
+      <h1>
+        Isabela Torres
+      </h1>
+      <p>
+        Amante de viagens, cultura e gastronomia. 🌍✈️  
+        Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸
+      </p>
+    </div>
 
-  <div class="wrapper">
-    <main class="container">
-      <img src="./assets/images/Image 01.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 02.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 03.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 04.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 05.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 06.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 07.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 08.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 09.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 10.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 11.png" alt="Foto de viagem">
-      <img src="./assets/images/Image 12.png" alt="Foto de viagem">
-    </main>
+    <div>
+      <div>
+        <img src="assets/icons/MapPin.svg" alt="">
+        <span>São Paulo, Brazil</span>
+      </div>
+      <div>
+        <img src="assets/icons/AirplaneTilt.svg" alt="">
+        <span>37 países</span>
+      </div>
+      <div>
+        <img src="assets/icons/Image.svg" alt="">
+        <span>240 fotos</span>
+      </div>
+    </div>
+  </section>
 
-    <footer class="container">
-      <span>Travelgram © 2024</span><span><a href="#">Termos de uso</a></span><span><a href="#">Política de privacidade</a></span>
-    </footer>
-  </div>
-  
+  <main class="container">
+    <img src="./assets/images/Image 01.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 02.png" alt="Foto de viagem">
+    <!-- <img src="./assets/images/Image 03.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 04.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 05.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 06.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 07.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 08.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 09.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 10.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 11.png" alt="Foto de viagem">
+    <img src="./assets/images/Image 12.png" alt="Foto de viagem"> -->
+  </main>
 
+  <footer class="container">
+    <span>Travelgram © 2024</span><span><a href="#">Termos de uso</a></span><span><a href="#">Política de privacidade</a></span>
+  </footer>
 </body>
 </html>
