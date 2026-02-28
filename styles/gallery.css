@@ -1,4 +1,7 @@
 #gallery{
+  padding-block: var(--pady-md);
+  background-color: var(--background-color);
+
   & > div{
     flex-wrap: wrap;
     gap: 1rem;
