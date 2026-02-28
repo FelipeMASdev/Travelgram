@@ -1,0 +1,49 @@
+#hero{
+  flex-direction: column;
+  padding-block: var(--pady-lg);
+
+  background-color: var(--surface-color);
+
+  & > .flex{
+    width: 100%;
+  }
+
+  & .flex:not(.items-center){
+    flex-direction: column;
+  }
+
+  & #profile-pic{
+    width: 7.5rem;
+    border-radius: 50%;
+  }
+
+  & :not(h1){
+    line-height: var(--lh-xl);
+  }
+}
+
+
+@media (width >= 80em){
+  #hero{
+    flex-direction: row;
+    justify-content: space-between;
+
+    & >.flex:first-child{
+      flex-direction: row;
+      width: 37rem;
+      gap:2rem;
+
+      & >:last-child{
+        align-self: center;
+      }
+    }
+
+    & >.flex:last-child{
+      width: 17rem;
+    }
+
+    & #profile-pic{
+      width: 11rem;
+    }
+  }
+}
