@@ -1,0 +1,39 @@
+#gallery{
+  & > div{
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    & a{
+      border-radius: .5rem;
+
+      & img{ 
+        width: 20.5rem;
+        height: 20.5rem;
+  
+        border-radius: .5rem;
+        object-fit: cover;
+
+        transition: border 0.3s ease, transform 0.3s ease;
+      }
+
+      &:hover, &:focus{
+        & img{
+          border: 2px solid var(--brand-color);
+          transform: scale(105%);
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 80em){
+  #gallery{
+    & > div{
+      & a img{
+        width: 17.875rem;
+        height: 17.875rem;
+      }
+    }
+  }
+}

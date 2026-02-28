@@ -4,6 +4,11 @@
 
   background-color: var(--surface-color);
 
+  & >:first-child{
+    max-width: 25rem;
+    align-self: flex-start;
+  }
+
   & > .flex{
     width: 100%;
   }
@@ -29,6 +34,9 @@
     justify-content: space-between;
 
     & >.flex:first-child{
+      max-width: initial;
+      align-self: initial;
+      
       flex-direction: row;
       width: 37rem;
       gap:2rem;

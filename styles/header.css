@@ -21,8 +21,10 @@ header{
       & img{
         width: 1.5rem;
         height: 1.5rem;
+      }
 
-        &:hover{
+      &:hover, &:focus{
+        & img{
           filter: invert(58%) sepia(74%) saturate(397%) hue-rotate(329deg) brightness(96%) contrast(92%);
         }
       }
@@ -34,9 +36,12 @@ header{
         height: 2.5rem;
         object-fit: cover;
         border-radius: 50%;
+      }
 
-        &:hover{
-          border: 2px solid var(--brand-color);
+      &:hover, &:focus{
+        outline: none;
+        & img{
+          outline: 2px solid var(--brand-color);
         }
       }
     }

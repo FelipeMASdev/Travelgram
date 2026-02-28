@@ -59,7 +59,8 @@ a{
   text-decoration: none;
 }
 
-a:hover{
+a:hover, a:focus{
+  outline: none;
   color: var(--brand-color);
   text-decoration: underline;
 }
@@ -81,7 +82,7 @@ h1{
   margin-inline: auto;
   padding-inline: var(--padx-lg);
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header.container,
